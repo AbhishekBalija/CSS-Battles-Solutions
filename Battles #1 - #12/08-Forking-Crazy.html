@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="box">
+    <div class="top"></div>
+    <div class="top inverted"></div>
+    <div class="top"></div>
+    <div class="top inverted"></div>
+    <div class="top"></div>
+    <div class="top inverted"></div>
+    <div class="top"></div>
+  </div>
+  <div class="middle"></div>
+  <div class="bottom"></div>
+</div>
+
+<style>
+  body{
+    background:#6592CF;
+    display:grid;
+    place-content:center
+  }
+  .container{
+    height:300;
+    width:300;
+    overflow:hidden;
+    display:grid;
+    place-content:center;
+  }
+  .top,.bottom{
+    height:110;
+    width:20;
+    background:#060F55;
+    border-radius:10px 10px 0 0;
+  }
+  .middle{
+    height:100;
+    width:140;
+    background:#060F55;
+    border-radius:0 0 100px 100px;
+    margin-top:-10;
+  }
+  .bottom{
+    translate:60px 50px;
+    margin-top:-110
+  }
+  .box{
+    display:flex;
+    justify-content:space-between
+  }
+  .inverted{
+    scale:-1;
+    background:#6592CF
+  }
+</style>
+
+
+<!-- Shortest one -->
+<!-- <p s><p l><p l b><style>&{background:#6592CF}[s]{width:140;height:100;background:#060F55;border-radius:0 0 1in 1in;margin:150 122-216}[l]{height:100;width:20;background:#060F55;translate:122px;border-radius:1in 1in 0 0;box-shadow:40px 0,80px 0,120px 0,60px 150px;color:#060F55}[b]{background:#6592CF;border-radius:1in;width:20;height:20;translate:142px -26px;color:#6592CF -->
