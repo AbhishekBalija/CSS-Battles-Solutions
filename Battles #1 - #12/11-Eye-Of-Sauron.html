@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="semi-circle left"></div>
+  <div class="circle"></div>
+  <div class="semi-circle right"></div>
+</div>
+<style>
+  body{
+    background:#191210;
+  }
+  .container{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px
+  }
+  .circle{
+    width:50;
+    height:50;
+    background:#84271C;
+    border-radius:50%;
+    box-shadow:0 0 0 25px #191210,0 0 0 45px #ECA03D
+  }
+  .semi-circle{
+    border:20px solid #ECA03D;
+    height:30;
+    width:60;
+    border-radius:100px 100px 0 0;
+    border-bottom:0;
+  }
+  .right{
+    translate:0 -25px
+  }
+  .left{
+    translate:0 25px;
+    scale:-1;
+  }
+</style>
+
+<!-- Shortest one -->
+
+<!-- <style>&{background:radial-gradient(1q,#84271C 25px,#0000 0 50px,#ECA03D 0 70px,#0000),radial-gradient(1q at 50%100%,#0000 30px,#ECA03D 0 50px,#0000)100px -150px,radial-gradient(1q at 50%0,#0000 30px,#ECA03D 0 50px,#0000)-100px 150px#191210 -->
