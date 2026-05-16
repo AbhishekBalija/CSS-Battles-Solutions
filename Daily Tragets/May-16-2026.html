@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="border"></div>
+  <div class="box"></div>
+  <div class="border border2"></div>
+</div>
+
+<style>
+  body{
+    background:#CF596A;
+  }
+  .container{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center
+  }
+  .box{
+    background:#F3EAD2;
+    height:24;
+    width:24
+  }
+  .border{
+    border:24px solid #F3EAD2;
+    height:120;
+    width:66;
+    mask:conic-gradient(from 90deg at 24px 24px,red 75%,#0000 0)114px 72px
+  }
+  .border2{
+    rotate:180deg;
+  }
+</style>
+
+<!-- Shortest one -->
+
+<!-- <p><p><style>&{background:conic-gradient(at 24px 24px,#CF596A 75%,#F3EAD2 0)188px 138px}p{height:120;border:24px solid#F3EAD2;margin:66 204-234 66;mask:conic-gradient(from 90deg at 24px 24px,red 75%,#0000 0)114px 72px}p+p{translate:138px;scale:-1 -->
