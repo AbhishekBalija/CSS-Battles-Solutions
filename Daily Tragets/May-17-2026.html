@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="circle t"></div>
+  <div class="circle b"></div>
+  <div class="circle l"></div>
+  <div class="circle r"></div>
+</div>
+
+<style>
+  body{
+    background:#594C94;
+    margin:20 60 60 20
+  }
+  .container{
+    height:100%;
+    width:100%;
+    background:#EEEDED;
+    position:relative;
+    overflow:hidden;
+    border:20px solid #EEEDED
+  }
+  .circle{
+    background:#594C94;
+    height:180px;
+    width:180px;
+    clip-path:circle();
+    position:absolute;
+  }
+  .t{
+    translate:70px -90px
+  }
+   .b{
+    translate:70px 130px
+  }
+   .r{
+    translate:230px 20px
+  } 
+  .l{
+    translate:-90px 20px
+  }
+</style>
+
+<!-- Shortest one -->
+
+<!-- <style>&{background:#594C94;margin:12;*{--g:radial-gradient(1q,#594C94 90px,#0000);background:var(--g)0 110px,var(--g)160px#EEEDED;border:20px solid#EEEDED -->
