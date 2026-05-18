@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="circle t"></div>
+  <div class="circle t"></div>
+  <div class="circle t"></div>
+  <div class="circle b"></div>
+  <div class="line horizontal"></div>
+  <div class="line vertical"></div>
+</div>
+
+<style>
+  body{
+    background:#9FF0FB;
+  }
+  .t{
+    translate:0 16px
+  }
+  .b{
+    translate:0 -16px
+  }
+  .horizontal{
+    translate:0 -60px
+  }
+  .vertical{
+    rotate:90deg
+  }
+  .container{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    position:relative;
+  }
+  .circle{
+    height:100px;
+    width:100px;
+    background:#3F8BA6;
+    border-radius:50%
+  }
+  .line{
+    background:#3F8BA6;
+    height:30px;
+    width:50%;
+    position:absolute
+  }
+</style>
+
+<!-- Shortest one -->
+
+<!-- <style>&{background:#9FF0FB;margin:32 22;*{--g:#3F8BA6 32q,#0000 0;background:linear-gradient(var(--g))50%37q/50%no-repeat,linear-gradient(90deg,var(--g))164q/50%50%no-repeat,radial-gradient(1q at 53q 53q,#3F8BA6 53q,#0000)0/30vw,radial-gradient(1q at 50%180q,#3F8BA6 53q,#0000 -->
