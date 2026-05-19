@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="sq tl"></div>
+  <div class="sq tr"></div>
+  <div class="big-sq"></div>
+  <div class="sq bl"></div>
+  <div class="sq br"></div>
+</div>
+
+<style>
+  body{
+    background:#EFEADE;
+    margin:0
+  }
+  .container {
+    height:100%;
+    width:100%;
+    display:grid;
+    place-content:center;
+    grid-template-rows:repeat(1,50px);
+    grid-template-columns:repeat(2,50px);
+    gap:70px;
+    margin-left:-15px;
+  }
+  .sq{
+    height:80px;
+    width:80px;
+    background:#B29DF7;
+  }
+  .big-sq{
+    position:absolute;
+    height:120px;
+    width:120px;
+    background:conic-gradient(
+      at 40px 40px,
+      #B29DF7 75%,
+      #594F7C 0
+    )0 0/80px 80px;
+    translate:155px 90px;
+  }
+</style>
+
+<!-- Shortest one -->
+ 
+<!-- <style>&{background:#EFEADE;margin:42 92;*{background:conic-gradient(at 40px 40px,#0000 75%,#594F7C 0)40px 40px/5pc 5pc,conic-gradient(at 5pc 5pc,#0000 75%,#B29DF7 0)0 0/30vw 30vw,conic-gradient(at 30vw 30vw,#0000 75%,#B29DF7 0)40px 40px -->
