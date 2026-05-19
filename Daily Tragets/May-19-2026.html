@@ -1,42 +1,53 @@
 <div class="container">
-  <div class="sq tl"></div>
+  <div class="sq"></div>
   <div class="sq tr"></div>
-  <div class="big-sq"></div>
   <div class="sq bl"></div>
   <div class="sq br"></div>
+  <div class="big"></div>
 </div>
 
 <style>
-  body{
-    background:#EFEADE;
-    margin:0
-  }
-  .container {
-    height:100%;
-    width:100%;
-    display:grid;
-    place-content:center;
-    grid-template-rows:repeat(1,50px);
-    grid-template-columns:repeat(2,50px);
-    gap:70px;
-    margin-left:-15px;
-  }
-  .sq{
-    height:80px;
-    width:80px;
-    background:#B29DF7;
-  }
-  .big-sq{
-    position:absolute;
-    height:120px;
-    width:120px;
-    background:conic-gradient(
-      at 40px 40px,
-      #B29DF7 75%,
-      #594F7C 0
-    )0 0/80px 80px;
-    translate:155px 90px;
-  }
+body{
+  margin:0;
+  background:#EFEADE;
+  display:grid;
+  place-items:center;
+  height:100vh;
+}
+
+.container{
+  width:200px;
+  height:200px;
+  position:relative;
+}
+
+.sq,.big{
+  position:absolute;
+  background:#B29DF7;
+}
+
+.sq{
+  width:80px;
+  height:80px;
+}
+
+.big{
+  width:120px;
+  height:120px;
+  top:50%;
+  left:50%;
+  translate:-50% -50%;
+  background:conic-gradient(
+     at 40px 40px,
+    #B29DF7 75%,
+    #594F7C 0
+  )0 0/80px 80px
+}
+
+
+.tr{top:0;right:0}
+.bl{bottom:0;left:0}
+.br{bottom:0;right:0}
 </style>
 
 <!-- Shortest one -->
