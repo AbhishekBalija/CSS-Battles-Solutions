@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="lbox"></div>
+  <div class="sbox"></div>
+</div>
+
+<style>
+  body{
+    background:#32360E;
+    margin:0;
+  }
+  .container{
+    height:100vh;
+    width:100vw;
+    display:grid;
+    place-content:center;
+  }
+  .sbox,.lbox{
+    grid-area:1/1
+  }
+  .sbox{
+    height:120px;
+    width:120px;
+    background:conic-gradient(
+      #E8AD6D 75%,
+      #0000 0
+    );
+    translate:60px 60px;
+    box-shadow:60px 60px#A84A4B
+  }
+  .lbox{
+    height:240px;
+    width:240px;
+    background:conic-gradient(
+      at 180px 180px,
+      #E8AD6D 75%,
+      #0000 0
+    );
+    
+  }
+</style>
+
+<!-- Shortest one -->
+
+<!-- <style>&{background:#32360E;margin:22 72;*{background:conic-gradient(#A84A4B 75%,#0000 0)100%100%/30vw 30vw no-repeat#E8AD6D;clip-path:polygon(0 75%,25%75%,25%50%,50%50%,50%25%,75%25%,75%0,100%0,100%100%,0 100% -->
