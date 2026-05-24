@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="circle c1"></div>
+  <div class="circle"></div>
+</div>
+
+<style>
+  body{
+    background:radial-gradient(
+      #E8AD6D 65px,
+      #2F5A76 0
+    );
+    margin:0;
+  }
+  .container{
+    height:100vh;
+    width:100vw;
+    display:grid;
+    place-content:center;
+    grid-template-columns:repeat(2,130px 65px)
+  }
+  .circle{
+    height:160px;
+    width:160px;
+    border:50px solid#E8AD6D;
+    border-radius:2in;
+  }
+  .c1{
+      mask:conic-gradient(
+      at 130px 100%,
+      red 75%,
+      #0000 0
+    )
+  }
+</style>
+
+<!-- Shortest one -->
+
+<!-- <style>&{--c:radial-gradient(1q,#0000 80px,#E8AD6D 0 130px,#0000);background:conic-gradient(at 20%32%,#0000 75%,#E8AD6D 0)175px 25vw,var(--c)-65px,var(--c)65px#2F5A76;box-shadow:inset 135px 0#2F5A76 -->
